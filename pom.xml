@@ -14,11 +14,26 @@
   
   <properties>
 	<!-- versions -->
-	<sonar.host.url>http://3.109.54.12:9000/</sonar.host.url>
+	<sonar.host.url>http://65.2.161.159:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password> 
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>standalone-release</name>
+	      <url>http://15.206.90.127:8081/repository/maven-standalone//</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Standalone-snapshot</name>
+	      <url>http://15.206.90.127:8081/repository/maven-standalone-snapshot/</url>
+	    </snapshotRepository>
+	    
+</distributionManagement>
   
 </project>
